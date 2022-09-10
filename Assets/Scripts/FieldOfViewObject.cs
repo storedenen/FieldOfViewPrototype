@@ -18,16 +18,14 @@ public class FieldOfViewObject : MonoBehaviour
 
     private Mesh _mesh;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _mesh = new Mesh();
 
         GetComponent<MeshFilter>().mesh = _mesh;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Vector3 origin = Vector3.zero;
         Vector3 rayOrigin = transform.TransformPoint(origin);

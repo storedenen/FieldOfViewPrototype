@@ -18,8 +18,7 @@ public class PlayerController : MonoBehaviour
     
     private NavMeshAgent _navAgent;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if (_playerCamera == null)
         {
@@ -29,8 +28,7 @@ public class PlayerController : MonoBehaviour
         _navAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonUp(1))
         {
